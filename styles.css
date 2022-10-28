@@ -1,7 +1,7 @@
 .banner{
     background-color: skyblue;
     color: red;
-    height: 100px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,21 +10,59 @@
 
 }
 
+body{
+    background-image: url("images/stars.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name{
+    flex: 1;
+    justify-content: center;
+    border: 1px solid red;
+    margin: 10px;
+}
+
 .menu{
-    justify-content: space-between;
-    background-color: brown;
+    justify-content: flex-end;
+    background-color: skyblue;
     gap: 2px;
     height: 100px;
-    flex: 2 1 auto;
-    text-align: end;
-    
+    flex: 0.5;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
 }
-
 
 .menu-item{
-    background-color: chartreuse;
-    height: 100px;
-    align-self: center;
-    flex:1 1 auto
+    justify-content: flex-end;
+    border: 2px solid red;
 }
 
+/* https://stackoverflow.com/questions/27781634/rotating-globe-in-css*/
+
+#earth {
+    width: 500px;
+    height: 500px;
+    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+    border-radius: 50%;
+    background-size: 1100px;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 1100px 0px; }
+}
+@-webkit-keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 1100px 0px; }
+}
