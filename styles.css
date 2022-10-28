@@ -1,0 +1,30 @@
+.banner{
+    background-color: skyblue;
+    color: red;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.menu{
+    justify-content: space-between;
+    background-color: brown;
+    gap: 2px;
+    height: 100px;
+    flex: 2 1 auto;
+    text-align: end;
+    
+}
+
+
+.menu-item{
+    background-color: chartreuse;
+    height: 100px;
+    align-self: center;
+    flex:1 1 auto
+}
+
