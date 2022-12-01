@@ -5,3 +5,6 @@ function getCountry(){
     const field = document.querySelector('#country');
     field.setAttribute("value", `${country}`);
 }
+
+const submit = document.querySelector(".submit");
+submit.addEventListener('click', getCountry);
